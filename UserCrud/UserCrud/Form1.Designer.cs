@@ -1,4 +1,4 @@
-﻿namespace WinFormsApp
+namespace UserCrud
 {
     partial class Form1
     {

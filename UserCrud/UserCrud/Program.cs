@@ -1,4 +1,4 @@
-namespace WinFormsApp
+namespace UserCrud
 {
     internal static class Program
     {
