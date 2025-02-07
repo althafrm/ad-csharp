@@ -25,5 +25,13 @@ namespace BookManagement.Forms
             var books = _bookService.GetBooks();
             dataGridView1.DataSource = books;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var name = textBox1.Text;
+            var isbn = textBox2.Text;
+            var author = textBox3.Text;
+            _bookService.AddBook(name, isbn, author);
+        }
     }
 }

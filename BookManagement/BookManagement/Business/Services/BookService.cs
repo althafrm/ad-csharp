@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BookManagement.Business.Services
 {
-    public  class BookService
+    public class BookService
     {
         private readonly BookRepository _repository;
         public BookService()
@@ -18,6 +18,11 @@ namespace BookManagement.Business.Services
         public List<Book> GetBooks()
         {
             return _repository.GetAllBoks();
+        }
+
+        public void AddBook(string name, string isbn, string author)
+        {
+            _repository.AddBook(name, isbn, author);
         }
     }
 }
